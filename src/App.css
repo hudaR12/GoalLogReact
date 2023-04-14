@@ -29,14 +29,13 @@
 }
 
 .inputs{
-  outline:none;
   width:260px;
   padding:15px;
   margin-right:25px;
   font-size:20px;
-  color:#ccc;
+  color: #383636;
   background-color: #fff;
-  border: 1px solid #c89666;
+  border: 3px solid #b18f50;
   border-radius: 10px;
 
 }
@@ -55,9 +54,8 @@
 .listitems{
   display:flex;
   margin: 20px 0;
-  border: 2px solid #ccc;
+  border: 4px solid #ccc;
   padding: 20px;
-  max-height: 30px;
   justify-content: space-between;
   color:white;
   font-size: 25px;
@@ -81,9 +79,4 @@
     font-size:20px;
     padding-left: 10px;
     padding-right: 15px;
-  }
-
-  input:focus,
-  button:focus{
-    outline:none;
   }

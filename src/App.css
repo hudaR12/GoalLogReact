@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.app-wrapper{
+.wrapper{
   background-color: #6a927f;
   min-width: 450px;
   min-height: 650px;
@@ -28,7 +28,7 @@
   font-size: 40px;
 }
 
-.task-input{
+.inputs{
   outline:none;
   width:260px;
   padding:15px;
@@ -63,7 +63,6 @@
   font-size: 25px;
 }
 
-.completebtn,
 .deletebtn
 {
   border:none;
@@ -74,21 +73,9 @@
   border-radius: 50%;
 }
 
-.completebtn{
-  color:#ff6c6c;
-  margin-right:10px;}
-
-  .complete{
-    text-decoration-style: solid;
-    text-decoration-line: line-through;
-    text-decoration-color:#ff6c6c;
-    opacity: 0.6;
-  }
-
-  .list{
+.list{
     width: 220px;
     background-color: #4c4156;
-    ;
     border:none;
     color: #ccc;
     font-size:20px;

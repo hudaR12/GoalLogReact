@@ -29,8 +29,8 @@ function Form({firstinput,setFirstInput,secondinput,setSecondInput,goalList,setG
   
   return (
     <form onSubmit={formData}>
-        <input type="text" placeholder='Enter your goal' className='task-input' value={firstinput} onChange={(e)=>setFirstInput(e.target.value)}/>
-        <input type="text" placeholder='Enter goal description' className='task-input' value={secondinput}  onChange={(e)=>setSecondInput(e.target.value)}/>
+        <input type="text" placeholder='Enter your goal' className='inputs' value={firstinput} onChange={(e)=>setFirstInput(e.target.value)}/>
+        <input type="text" placeholder='Enter goal description' className='inputs' value={secondinput}  onChange={(e)=>setSecondInput(e.target.value)}/>
         <button className='addBtn' onClick={onAdd}>Add</button>
         <div>
 {  
@@ -39,12 +39,9 @@ function Form({firstinput,setFirstInput,secondinput,setSecondInput,goalList,setG
      <li class="listitems" key={index}>
      <div>
      <h3 style={{color:"white"}}> {item.firstinput} </h3>
-     <p style={{color:"white",fontSize:"14px"}}>  {item.secondinput} </p>
+     <p style={{color:"white", fontSize:"14px"}}>  {item.secondinput} </p>
      </div>
      <div>
-     <button className='completebtn task-button'>
-       <i className='fa fa-check-circle' onClick={() =>{alert("Task Completed")}}></i>
-      </button>
       <button onClick={()=>deleteItem(index)} className='deletebtn task-button'>
        <i className='fa fa-trash'></i>
       </button>
